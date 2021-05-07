@@ -410,7 +410,7 @@ export class Brush extends PureComponent<Props, State> {
   renderBackground() {
     const { x, y, width, height, fill, stroke } = this.props;
 
-    return <rect stroke={stroke} fill={fill} x={x} y={y} width={width} height={height} />;
+    return <rect rx="12" stroke={stroke} fill={fill} x={x} y={y} width={width} height={height} />;
   }
 
   renderPanorama() {
@@ -473,6 +473,7 @@ export class Brush extends PureComponent<Props, State> {
         stroke="none"
         fill={stroke}
         fillOpacity={0.2}
+        rx="12"
         x={x}
         y={y}
         width={width}
